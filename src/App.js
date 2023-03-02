@@ -1,12 +1,15 @@
 
-import './global.css';
+import { HomePage } from './components/HomePage';
+import { AboutMe } from './components/AboutMe';
+import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-     
-      </header>
+    <div className="Portfolio">
+<HomePage/>
+<AboutMe/>
+
     </div>
   );
 }
