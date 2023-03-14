@@ -5,13 +5,14 @@ import TypewritterEf from "./Typewritter";
 
 export function HomePage() {
     return (
-        <div className="bg-beige dark:bg-slate-900 dark:text-white container relative z-30 mx-auto">
+        <div className="bg-beige dark:bg-slate-900 dark:text-white  relative z-30 mx-auto">
             <main className="flex-col flex h-screen">
 
-                <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-24 section">
-                    <div className="w-full">
+                <div className="container relative flex flex-col items-center justify-center flex-grow px-0 mx-auto md:px-20 lg:px-32 section">
+                    <div className="w-full ml-8">
+                        
                         <span className="text-2xl font-semibold text-greendark">
-                            Hello! 👋 My name is
+                            Hello! 👋&nbsp; My name is
                         </span>
 
 

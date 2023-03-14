@@ -1,15 +1,11 @@
 
-import { HomePage } from './components/HomePage';
-import { AboutMe } from './components/AboutMe';
-import './App.css';
-
+import "./App.css";
+import MainPage from "./components/MainPage";
 
 function App() {
   return (
     <div className="Portfolio">
-<HomePage/>
-<AboutMe/>
-
+    <MainPage/>
     </div>
   );
 }
