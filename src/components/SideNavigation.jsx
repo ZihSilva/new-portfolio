@@ -7,9 +7,9 @@ export function SideNavigation() {
     return (
         <div className="bg-beige dark:bg-slate-900 dark:text-white container relative z-30 mx-auto">
 
-            <div className="fixed hidden bottom-0 pl-12 sm:left-6 left-3">
+            <div className="fixed  bottom-0 pl-12 sm:left-6 left-3">
                 <ul className="flex flex-col gap-4 lg:gap-8">
-                    <li className="relative text-lg  bg-transparent  text-opacity-75  dark:text-white p-3 rounded-full hover:scale-125 duration-300 cursor-pointer group">
+                    <li className="hidden relative text-lg  bg-transparent  text-opacity-75  dark:text-white p-3 rounded-full hover:scale-125 duration-300 cursor-pointer group">
                         <div className="hidden lg:block absolute bottom-10 left-2 group-hover:opacity-100 duration-300 opacity-0 py-2 px-0 rounded-full">
                             <p className="text-base">Home</p>
                         </div>

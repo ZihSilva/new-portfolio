@@ -34,8 +34,6 @@ module.exports = {
         },
       },
 
-   
-
       colors: {
         'blue2':'#ABA8A9',
         'green': '#94AFAA',
@@ -60,9 +58,10 @@ module.exports = {
         mid: "#282833",
         dark: "#22222b",
         darker: "#1d1d23",
-        beige:"#dedcd7",
-        greendark: "#00837E",
-        greenlight: "#00B37E"
+        beige:"#6E6E6E",
+        greendark: "#BCFD4C",
+        greenlight: "#BCFD4C",
+        pink:"#00000"
       },
 
       transitionProperty: {

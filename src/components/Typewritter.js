@@ -6,7 +6,25 @@ const TypewritterEf = ({ text }) => {
     <div>
       <Typewritter
         onInit={(typewriter) => {
-          typewriter.typeString(text).pauseFor(2500).start();
+          typewriter
+          .typeString('Frontend Developer')
+          .changeDelay(30)
+          .pauseFor(2500)
+          .deleteAll(50)
+          .start()
+          .typeString('Teacher')
+          .pauseFor(2500)
+          .deleteAll()
+          .start()
+          .typeString('Cat Mom')
+          .pauseFor(2500)
+          .deleteAll()
+          .start()
+          .typeString('Nature lover')
+          .pauseFor(2500)
+          .deleteAll()
+          .start()
+          .repeat();
         }}
       />
     </div>

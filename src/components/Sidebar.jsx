@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll/modules';
-import { DarkMode } from './DarkMode';
+
 
 
 
@@ -23,7 +23,7 @@ export function Sidebar() {
           navbarOpen ? "overflow-hidden" : "overflow-auto"
         }`}
       >
-     <DarkMode/>
+    
         <div className="bg-white dark:bg-darker transition-all duration-150 ease-in-out ">
                 <div
                     className={`fixed w-full z-50 h-screen pt-24 bg-white dark:bg-darker bg-opacity-100 transform delay-100 transition-all duration-150 ${navbarOpen

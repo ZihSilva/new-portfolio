@@ -10,13 +10,13 @@ export function Skills() {
 
       <div className="flex-col flex  pl-4">
         <div className="w-full md:w-10/12 xl:w-full flex-col lg:mr-20 md:flex-wrap">
-        <div className="flex flex-col">
+        <div className=''>
         <h2 className="text-5xl">Skills</h2>
         <hr className="bg-greendark w-40 h-1.5 mt-4 mb-6 border-0"></hr>
 
          {/* grid icons */}
-          <ul className="grid grid-cols-3 w-50% mt-8 pr-16 gap-16 sm:grid-cols-4 md:grid-cols-6 md:pr-0 lg:w-max lg:gap-6 lg:pr-22">
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-500 text-md">
+          <ul className="grid grid-cols-3 w-50% mt-8 pr-16 gap-16 sm:grid-cols-4 md:grid-cols-6 md:pr-0 lg:w-max lg:gap-6 ">
+            <li className="flex-wrap space-around w-full text-center m-3  flex-col flex justify-start  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center"
                 src="https://www.svgrepo.com/show/452228/html-5.svg"
@@ -25,7 +25,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">HTML</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10  contain flex justify-center self-center"
                 src="https://www.svgrepo.com/show/452185/css-3.svg"
@@ -34,7 +34,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">CSS</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center"
                 src="https://www.svgrepo.com/show/349419/javascript.svg"
@@ -45,7 +45,7 @@ export function Skills() {
               </p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center bg-white"
                 src="https://www.svgrepo.com/show/473768/react.svg"
@@ -54,7 +54,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">React</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center bg-white"
                 src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png"
@@ -63,7 +63,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">Github</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center bg-white"
                 src="https://www.svgrepo.com/show/503445/nodejs.svg"
@@ -72,7 +72,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">NodeJs</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center"
                 src="https://www.svgrepo.com/show/439231/mongodb.svg"
@@ -81,7 +81,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">MongoDb</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center bg-white"
                 src="https://www.svgrepo.com/show/353724/express.svg"
@@ -90,7 +90,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">Express</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center bg-white"
                 src="https://www.svgrepo.com/show/333609/tailwind-css.svg"
@@ -99,7 +99,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">Tailwind</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center"
                 src="https://seeklogo.com/images/J/json-logo-265700B506-seeklogo.com.jpg"
@@ -108,7 +108,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">JSON</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center"
                 src="https://seeklogo.com/images/C/canva-logo-B4BE25729A-seeklogo.com.png"
@@ -117,7 +117,7 @@ export function Skills() {
               <p className="flex justify-center items-center mt-2">Canva</p>
             </li>
 
-            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-stone-500 text-md">
+            <li className="flex-wrap space-around w-full text-center m-3 flex-col flex justify-center  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center bg-white"
                 src="https://logodownload.org/wp-content/uploads/2022/12/figma-logo-0.png"
