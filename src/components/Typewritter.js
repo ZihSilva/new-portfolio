@@ -24,7 +24,7 @@ const TypewritterEf = ({ text }) => {
           .pauseFor(2500)
           .deleteAll()
           .start()
-          .repeat();
+          
         }}
       />
     </div>

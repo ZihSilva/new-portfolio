@@ -1,5 +1,6 @@
 // import { Sidebar } from "./components/Sidebar";
 import { Nav } from "./components/Nav";
+// import {Navbar} from "./components/Navabar";
 import { HomePage } from "./components/HomePage";
 import { AboutMe } from "./components/AboutMe";
 import { Skills } from "./components/Skills";
@@ -19,6 +20,7 @@ function App() {
       <div className="Portfolio" >
         <Nav />
         {/* <Sidebar/> */}
+        {/* <Navbar/> */}
         <HomePage />
         <SocialMedia />
         <SideNavigation />

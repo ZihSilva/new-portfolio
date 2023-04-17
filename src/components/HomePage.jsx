@@ -12,9 +12,9 @@ export function HomePage() {
         <div className="bg-beige dark:bg-slate-900 dark:text-white  relative z-30 mx-auto">
             <main className="flex-col flex h-screen">
 
-                <div className="container relative flex flex-col items-center justify-center flex-grow px-0 mx-auto md:px-20 lg:px-32 section">
+                <div className="container relative flex flex-col items-center justify-center flex-grow px-10 mx-auto md:px-20 lg:px-32 section">
                    
-                    <div className="w-full ml-8">
+                    <div className="w-full">
                    
                         <span className="text-2xl font-semibold text-dark">
                             Hello👋&nbsp; My name is

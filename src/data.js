@@ -28,7 +28,7 @@ const data = [
       title: "Tranquili-tea",
       description:
         "An ecommerce website for selling tea built with React, JavaScript, Node.js, MongoDB, and Tailwind CSS. The website also has a forum where users can discuss and share information about tea.",
-      tools: ["React", "JavaScript", "Node.js", "MongoDB", "Tailwind CSS"],
+      tools: ["React", "JavaScript", "Node.js", "MongoDB", "Tailwind"],
       site: "https://tranquili-tea.netlify.app/",
       repo: "https://github.com/carolineabreu/Tranquili-Tea-client",
     },

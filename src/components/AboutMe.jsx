@@ -6,7 +6,7 @@ export function AboutMe() {
   return (
     <div className="bg-beige dark:bg-slate-900 dark:text-white z-30 mx-auto">
       <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-32 section">
-        <div className="w-ful px-3">
+        <div className="w-ful px-10">
           <div className="flex flex-col">
             <h2 className="text-5xl">About</h2>
             <hr className="bg-greendark w-40 h-1.5 mt-4 mb-6 border-0"></hr>
@@ -44,11 +44,11 @@ export function AboutMe() {
                 </p>
 
               </div>
-              <div className="flex w-full  h-full  mb-4 md:pl-8 md:w-3/12 md:mb-0">
+              <div className="flex mb-4 md:pl-8 md:w-3/12 md:mb-0">
                 <img
                   src={photo}
                   className="overflow-hidden rounded-md"
-                  width={280}
+                  width={180}
                   height={280}
                   alt={"Zimarlen Silva"}
                 />

@@ -30,15 +30,15 @@ function handleChange(event){
   return (
     <div
       name="contact"
-      className="bg-beige dark:bg-slate-900 py-4 dark:text-white w-full h-auto flex-col flex items-center font-myfont  justify-center"
+      className="bg-beige dark:bg-slate-900 pb-4 px-10 dark:text-white w-full h-auto flex-col flex items-center font-myfont  justify-center"
     >
-      <div className="w-2/3  lg:w-9/12 px-4 h-full flex flex-col justify-center">
+      <div className="w-80% lg:w-9/12 h-full flex flex-col justify-center">
         <div className="text-center mt-4 font-bold">
-        <h1 className="text-slate-900  dark:text-white text-2xl sm:text-3xl md:text-4xl lg:text-5x">
+        <h1 className="text-slate-900 dark:text-white text-2xl sm:text-3xl md:text-4xl lg:text-5x">
             Contact Me
           </h1>
         </div>
-        <div className="mt-8 w-full  sm:mx-auto md:text-lg md:w-[35rem] mx-auto lg:max-w-xl ">
+        <div className="mt-8 w-full sm:mx-auto md:text-lg md:w-[35rem] mx-auto lg:max-w-xl ">
           <form
             className=""
             onSubmit={handleSubmit}

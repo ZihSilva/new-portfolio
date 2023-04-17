@@ -5,8 +5,6 @@ import { DarkMode } from './DarkMode';
 
 
 
-
-
 export function Navbar() {
 
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
