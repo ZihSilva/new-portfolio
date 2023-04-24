@@ -3,71 +3,43 @@ import { Link } from 'react-scroll'
 
 export function Nav() {
 
-  const [ isOpen, setIsOpen] = useState(false);
-  const [scrolling, setScrolling] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleResize = () => {
-    if (window.innerWidth < 768) {
-    } else {
-      setIsOpen(false);
-    }
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+    console.log(toggleMenu);
   }
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
-        setScrolling(window.pageYOffset > 110)
-      );
-    }
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
 
   return (
-    <header className=''fixed w-full max-auto z-50 bg-white>
-      <div className="flex justify-evenly items-center py-4 md:py-6">
-        <div className="flex items-center">
-          <a href="/" className="font-bold text-2xl text-gray-800">
-            My Portfolio
-          </a>
-          {/* <button
-            onClick={() => setNavbarIsOpen(!navbarIsOpen)}
-            className="sm:hidden ml-32 focus:outline-none"
-          >
-            <svg
-              className="h-6 w-6 fill-current text-gray-800"
-              viewBox="0 0 24 24"
-            >
-              {navbarIsOpen ? (
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M19 6H5a1 1 0 00-1 1v1a1 1 0 001 1h14a1 1 0 001-1V7a1 1 0 00-1-1zm0 5H5a1 1 0 00-1 1v1a1 1 0 001 1h14a1 1 0 001-1v-1a1 1 0 00-1-1zM4 4a1 1 0 00-1 1v14a1 1 0 001 1h16a1 1 0 001-1V5a1 1 0 00-1-1H4z"
-                />
-              ) : (
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 5H4v2h16v-2z"
-                />
-              )}
-            </svg>
-          </button> */}
+    <nav className="bg-beige flex items-center justify-between flex-wrap p-6 border-b border-opacity-90 border-black">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/" class="flex items-center">
+          {/* <img src="../assets/4.png" className="h-8 mr-3" alt="Zimarlen's logo" /> */}
+          {/* <span className="text-lg text-greenlight ml-20">ZS</span> */}
+          <span class="self-center text-xl mr-16 font-semibold whitespace-nowrap dark:text-white">Zimarlen Silva</span>
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" class="hidden sm:visible text-black bg-greendark hover:bg-greendark focus:ring-4 focus:outline-none focus:ring-green-700 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Hire me</button>
+          {/* <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button> */}
+        </div>
+        <div className="block lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex sm:hidden items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+            className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
           >
             <svg
-              className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
+              className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
             <svg
-              className={`fill-current h-5 w-5 ${isOpen ? "block" : "hidden"}`}
+              className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -75,111 +47,31 @@ export function Nav() {
             </svg>
           </button>
         </div>
-        <nav className={`md:flex ${isOpen ? "block" : "hidden"}`}>
-          <ul className="md:flex items-center ml-20">
-          <li>
-              <a href="#about" className="block mt-4 md:inline-block md:mt-0 ml-10">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="block mt-4 md:inline-block md:mt-0 ml-10">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className="block mt-4 md:inline-block md:mt-0 ml-10">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="block mt-4 md:inline-block md:mt-0 ml-10">
-                Contact
-              </a>
-            </li>
-            <button className="bg-black hover:bg-transparent text-white font-bold py-2 ml-10 px-4 rounded">
-                <li className="z-50 hidden list-none lg:inline-block">
-                  <a
-                    href={`mailto:zimarlensilva@gmail.com`}
-                    className="ml-1 btn-md group"
-                  >
-                    Hire me
-                  </a>
-                </li>
-                </button>
-          </ul>
-          </nav>
+        <div
+          className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
+        >
+          <div className="text-sm lg:text-lg lg:mx-36 lg:flex-grow">
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+              Home
+            </a>
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+              About
+            </a>
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+              Skills
+            </a>
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+              Projects
+            </a>
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+              Contact
+            </a>
+          </div>
+          <div>
+          </div>
         </div>
-    </header>
-
+      </div>
+    </nav>
   )
 }
-
-// export function Nav() {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   return (
-//     <nav className="fixed w-full max-auto z-50 bg-white">
-//       <div className="flex justify-evenly items-center py-4 md:py-6">
-//         <div className="flex items-center">
-//           <a href="/" className="font-bold text-2xl text-gray-800">
-//             My Portfolio
-//           </a>
-//         </div>
-//         <div className="block lg:hidden">
-//           <button
-//             onClick={() => setIsOpen(!isOpen)}
-//             className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
-//           >
-//             <svg
-//               className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
-//               viewBox="0 0 20 20"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-//             </svg>
-//             <svg
-//               className={`fill-current h-5 w-5 ${isOpen ? "block" : "hidden"}`}
-//               viewBox="0 0 20 20"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-//             </svg>
-//           </button>
-//         </div>
-//         <div
-//           className={`w-full block flex-grow lg:flex lg:items-center ${isOpen ? "block" : "hidden"}`}
-//         >
-//           <ul className="md:flex items-center ml-20">
-//             <li>
-//               <a href="#about" className="block mt-4 md:inline-block md:mt-0 ml-96">
-//                 About
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#projects" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Projects
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#experience" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Experience
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#contact" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Contact
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-//         <div>
-//           <button className="inline-flex items-center bg-black border-0 py-2 px-4 text-white">
-//             Click Me
-//           </button>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }
 

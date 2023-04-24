@@ -10,18 +10,18 @@ export function Projects() {
     return (
         <section
             name="projects"
-            className="bg-beige dark:bg-slate-900 dark:text-white  z-30 mx-auto flex flex-col px-10 w-full md:px-20 lg:px-24 pt-10 section "
+            className="bg-beige dark:bg-slate-900 dark:text-white z-30 mx-auto flex flex-col px-10 w-full md:px-20 lg:px-24 pt-10 section "
         >
             <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-32 section">
 
                 <h2 className="text-5xl">My Work</h2>
-                <hr className="bg-greendark w-40 h-1.5 mt-4 mb-6 border-0"></hr>
+                <hr className="bg-greendark w-48 h-1.5 mt-4 mb-6 border-0"></hr>
 
-                <p className="my-8 mx-2 dark:text-white text-slate-900 md:text-xl lg:pr-60">
+                <p className="my-8 mx-2 dark:text-white text-slate-900 md:text-xl lg:pr-82">
                     Check out some of the personal projects I have been working on
                     lately. For a complete list, visit my
                     <a
-                        className="ml-2 py-1 dark:text-white font-bold tracking-wider cursor-pointer border-yellow border-b-2 hover:border-yellow-300 dark:hover:border-yellow-600 transition ease-in duration-300"
+                        className="ml-2 py-1 dark:text-white font-bold tracking-wider cursor-pointer border-greenlight border-b hover:border-green-400 dark:hover:border-yellow-600 transition ease-in duration-300"
                         href="https://github.com/ZihSilva"
                         target="_blank"
                         rel="noreferrer noopener"
@@ -33,27 +33,27 @@ export function Projects() {
 
 
                 {/* grid container */}
-                <div className="mt-4 dark:text-white mx-auto no-repeat center object-fit sm:my-4 md:mt-6  lg:grid-cols-2 gap-8 lg:gap-10">
+                <div className="mt-4 dark:text-white mx-auto no-repeat center object-fit sm:my-4 md:mt-6  grid lg:grid-cols-2 gap-8 lg:gap-10">
                     {/* card one */}
 
                     {data.map((project) => {
                         return (
-                            <div key={project.id} className="">
+                            <div key={project.id} className="m-0">
                                 <img
-                                    className="w-70 flex rounded-xl mb-7 transform group-hover:scale-105 transition ease-out duration-300 shadow-md  shadow-indigo-500/40 drop-shadow-2xl"
+                                    className="w-11/12 lg:w-10/12 flex rounded-xl m-0 mb-7 transform group-hover:scale-105 transition ease-out duration-300 shadow-md  shadow-indigo-500/40 drop-shadow-2xl"
                                     src={project.img}
                                     alt="/"
                                 />
-                                <h3 className="text-xl dark:text-white max-auto md:text-2xl lg:text-4xl tracking-wide font-normal py-2 text-slate-900">
+                                <h3 className="text-xl font-bold dark:text-white max-auto md:text-2xl lg:text-3xl  tracking-wide font-normal py-2 text-slate-900">
                                     {project.title}
                                     <a
                                         href={project.site}
                                         target="_blank"
                                         rel="noreferrer noopener"
                                         title="Live Site"
-                                        className="ml-2 dark:text-white font-normal text-md md:text-xl border-yellow border-b-2  transition cursor-pointer ease-in duration-300"
+                                        className="ml-2 dark:text-white font-normal text-md md:text-xl border-greenlight border-b  transition cursor-pointer ease-in duration-300"
                                     >
-                                        Live Site
+                                       Visit Site
                                     </a>
                                 </h3>
                                 <div className="py-2 dark:text-white flex flex-wrap">
@@ -66,7 +66,7 @@ export function Projects() {
                                         </span>
                                     ))}
                                 </div>
-                                <p className="py-2  dark:text-white max-auto md:text-xl text-slate-900">
+                                <p className="py-2 m-auto lg:pr-0 dark:text-white max-auto md:text-xl text-slate-900">
                                     {project.description}
                                 </p>
                                 <div className="flex dark:text-white items-center md:text-xl mb-20">
@@ -75,7 +75,7 @@ export function Projects() {
                                         target="_blank"
                                         rel="noreferrer noopener"
                                         title="Github Repository"
-                                        className="text-[15px] dark:text-white md:text-xl max-auto text-slate-900 tracking-wider uppercase text-md font-medium border-white border-b-2 transition ease-in duration-300 w-max"
+                                        className="text-[15px] dark:text-white md:text-xl max-auto text-slate-900 tracking-wider uppercase text-md font-medium border-greenlight border-b transition ease-in duration-300 w-max"
                                     >
                                         View Repository
                                     </a>
@@ -86,7 +86,6 @@ export function Projects() {
                     })}
                 </div>
             </div>
-
         </section >
     );
 };

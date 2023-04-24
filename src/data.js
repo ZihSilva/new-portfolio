@@ -15,7 +15,7 @@ const data = [
     {
       id: 2,
       img: imagesData.TSW,
-      title: "Travel Safety for Women ",
+      title: "TSW ",
       description:
         "This project is a website that provides information to help women travel safely. It is built using ReactJS, HTML, CSS, JavaScript, and several libraries including Axios, ant design, material UI, and grommet. ",
       tools: ["React", "Javascript", "CSS", "Axios", "material UI"],

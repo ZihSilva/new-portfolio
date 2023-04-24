@@ -5,11 +5,11 @@ import photo from "../assets/photo3.png";
 export function AboutMe() {
   return (
     <div className="bg-beige dark:bg-slate-900 dark:text-white z-30 mx-auto">
-      <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-32 section">
+      <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-30 section">
         <div className="w-ful px-10">
           <div className="flex flex-col">
             <h2 className="text-5xl">About</h2>
-            <hr className="bg-greendark w-40 h-1.5 mt-4 mb-6 border-0"></hr>
+            <hr className="bg-greendark w-32 h-1.5 mt-4 mb-6 border-0"></hr>
             
             <div className="flex flex-col-reverse items-start w-full md:flex-row">
               <div className="flex flex-col w-full md:pr-8 md:w-3/5">
@@ -39,7 +39,7 @@ export function AboutMe() {
                   as diverse music genres.
                 </p>
                 <p className="text-lg">
-                  Take a look at my work below to see what I&apos;m working
+                  Take a look at my work to see what I&apos;m working
                   on, and get in touch if you&apos;d like to work together!
                 </p>
 

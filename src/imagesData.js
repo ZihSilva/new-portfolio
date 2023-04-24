@@ -1,7 +1,7 @@
-import TSW from "./assets/1.png";
-import Tranquili from "./assets/2.png";
-import DanceSchool from "./assets/3.png";
-import GroceryList from "./assets/4.png"
+import TSW from "./assets/4.png";
+import Tranquili from "./assets/3.png";
+import DanceSchool from "./assets/1.png";
+import GroceryList from "./assets/2.png"
 
 
 const imagesData = {

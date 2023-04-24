@@ -5,17 +5,17 @@ export function Skills() {
     <div name="skills"
     className="bg-beige dark:bg-slate-900 dark:text-white z-30 mx-auto">
 
-      <div className="container relative flex flex-col items-start justify-center flex-grow px-10 mx-auto md:px-20 lg:px-32 py-20 section">
+      <div className="container relative flex flex-col items-start justify-center flex-grow px-16 mx-auto md:px-20 lg:px-32 py-20 section">
       <div className="w-full">
 
       <div className="flex-col flex ">
-        <div className="w-full md:w-10/12 xl:w-full flex-col lg:mr-20 md:flex-wrap">
+        <div className="w-full md:w-11/12 xl:w-full flex-col lg:mr-20 md:flex-wrap">
         <div className=''>
         <h2 className="text-5xl">Skills</h2>
-        <hr className="bg-greendark w-40 h-1.5 mt-4 mb-6 border-0"></hr>
+        <hr className="bg-greendark w-28 h-1.5 mt-4 mb-6 border-0"></hr>
 
          {/* grid icons */}
-          <ul className="grid grid-cols-3 w-50% mt-8 pr-4 gap-10 sm:grid-cols-4 md:grid-cols-6 md:pr-0 lg:w-max lg:gap-6 ">
+          <ul className="grid grid-cols-3 w-50% mt-8 pr-4 gap-10 sm:grid-cols-4 md:grid-cols-6 md:pr-0 lg:w-80% lg:mt-20 lg:gap-10 ">
             <li className="flex-wrap space-around w-full text-center  flex-col flex justify-start  text-slate-900 text-md">
               <img
                 className="h-10 flex justify-center self-center"
