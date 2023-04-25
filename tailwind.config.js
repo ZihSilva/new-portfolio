@@ -56,11 +56,12 @@ module.exports = {
         brandAlt: "#867dd8",
         light: "#a2a1a6",
         mid: "#282833",
-        dark: "#22222b",
-        darker: "#1d1d23",
-        beige:"#6E6E6E",
-        greendark: "#BCFD4C",
-        greenlight: "#BCFD4C",
+        dark: "#EBEBEB",
+        darker: "#02e1cf",
+        beige:"#33383e",
+        greendark: "#02e1cf",
+        greenlight: "#02e1cf",
+        // greenlight: "#BCFD4C",
         pink:"#00000"
       },
 

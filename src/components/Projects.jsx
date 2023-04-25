@@ -14,10 +14,10 @@ export function Projects() {
         >
             <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-32 section">
 
-                <h2 className="text-5xl">My Work</h2>
-                <hr className="bg-greendark w-48 h-1.5 mt-4 mb-6 border-0"></hr>
+                <h2 className="text-5xl text-white">My Work</h2>
+                <hr className="bg-greendark rounded-sm  w-48 h-1.5 mt-4 mb-6 border-0"></hr>
 
-                <p className="my-8 mx-2 dark:text-white text-slate-900 md:text-xl lg:pr-82">
+                <p className="my-8 mx-2 dark:text-white text-white md:text-xl lg:pr-82">
                     Check out some of the personal projects I have been working on
                     lately. For a complete list, visit my
                     <a
@@ -44,7 +44,7 @@ export function Projects() {
                                     src={project.img}
                                     alt="/"
                                 />
-                                <h3 className="text-xl font-bold dark:text-white max-auto md:text-2xl lg:text-3xl  tracking-wide font-normal py-2 text-slate-900">
+                                <h3 className="text-xl font-bold dark:text-white max-auto md:text-2xl lg:text-3xl  tracking-wide font-normal py-2 text-white">
                                     {project.title}
                                     <a
                                         href={project.site}
@@ -60,13 +60,13 @@ export function Projects() {
                                     {project.tools.map((tool, index) => (
                                         <span
                                             key={index}
-                                            className="dark:text-white md:text-xl  max-auto rounded-lg py-1 px-1 text-slate-900 text-sm cursor-pointer transition ease-in duration-300"
+                                            className="dark:text-white md:text-xl  max-auto rounded-lg py-1 px-1 text-white text-sm cursor-pointer transition ease-in duration-300"
                                         >
                                             {tool}
                                         </span>
                                     ))}
                                 </div>
-                                <p className="py-2 m-auto lg:pr-0 dark:text-white max-auto md:text-xl text-slate-900">
+                                <p className="py-2 m-auto lg:pr-0 dark:text-white max-auto md:text-xl text-white">
                                     {project.description}
                                 </p>
                                 <div className="flex dark:text-white items-center md:text-xl mb-20">
@@ -75,11 +75,11 @@ export function Projects() {
                                         target="_blank"
                                         rel="noreferrer noopener"
                                         title="Github Repository"
-                                        className="text-[15px] dark:text-white md:text-xl max-auto text-slate-900 tracking-wider uppercase text-md font-medium border-greenlight border-b transition ease-in duration-300 w-max"
+                                        className="text-[15px] dark:text-white md:text-xl max-auto text-white tracking-wider uppercase text-md font-medium border-greenlight border-b transition ease-in duration-300 w-max"
                                     >
                                         View Repository
                                     </a>
-                                    <IoIosArrowForward className="mb-0.5 dark:text-white text-slate-900" />
+                                    <IoIosArrowForward className="mb-0.5 dark:text-white text-white" />
                                 </div>
                             </div>
                         );

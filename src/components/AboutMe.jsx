@@ -8,15 +8,15 @@ export function AboutMe() {
       <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-30 section">
         <div className="w-ful px-10">
           <div className="flex flex-col">
-            <h2 className="text-5xl">About</h2>
+            <h2 className="text-5xl text-white">About</h2>
             <hr className="bg-greendark w-32 h-1.5 mt-4 mb-6 border-0"></hr>
             
-            <div className="flex flex-col-reverse items-start w-full md:flex-row">
+            <div className="flex flex-col-reverse text-white items-start w-full md:flex-row">
               <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                 <p className="text-lg">
                   Hello! I'm a frontend developer living in Vancouver Island.
                   I specialize in creating I specialize in creating{" "}
-                  <span className="text-lg text-greendark">
+                  <span className="text-lg text-greendark shadow-white">
                     beautiful, usable, and professional{" "}
                   </span>
                   websites.{" "}

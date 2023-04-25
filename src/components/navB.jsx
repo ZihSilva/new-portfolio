@@ -52,7 +52,7 @@
 //           </button> */}
 //           <button
 //             onClick={() => setIsOpen(!isOpen)}
-//             className="flex sm:hidden items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+//             className="flex sm:hidden items-center px-3 py-2 rounded text-white-500 hover:text-white-400"
 //           >
 //             <svg
 //               className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
@@ -124,7 +124,7 @@
 //         <div className="block lg:hidden">
 //           <button
 //             onClick={() => setIsOpen(!isOpen)}
-//             className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+//             className="flex items-center px-3 py-2 rounded text-white-500 hover:text-white-400"
 //           >
 //             <svg
 //               className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}

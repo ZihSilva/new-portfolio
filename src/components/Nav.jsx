@@ -12,34 +12,27 @@ export function Nav() {
 
 
   return (
-    <nav className="bg-beige flex items-center justify-between flex-wrap p-6 border-b border-opacity-90 border-black">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-beige flex items-center justify-between flex-wrap p-4 border-b border-opacity-90 border-black">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <a href="/" class="flex items-center">
           {/* <img src="../assets/4.png" className="h-8 mr-3" alt="Zimarlen's logo" /> */}
           {/* <span className="text-lg text-greenlight ml-20">ZS</span> */}
-          <span class="self-center text-xl mr-16 font-semibold whitespace-nowrap dark:text-white">Zimarlen Silva</span>
+          <span class="flex justify-start text-xl text-white mr-24 lg:mr-0 sm:mr-96 font-semibold whitespace-nowrap dark:text-white first-letter:text-lightgreen">Zimarlen Silva</span>
         </a>
-        <div class="flex md:order-2">
-          <button type="button" class="hidden sm:visible text-black bg-greendark hover:bg-greendark focus:ring-4 focus:outline-none focus:ring-green-700 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Hire me</button>
-          {/* <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button> */}
-        </div>
         <div className="block lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
+            className="flex items-center px-3 py-2 rounded text-white-500 hover:text-white-400"
           >
             <svg
-              className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
+              className={`fill-current h-3 w-3 text-white ${isOpen ? "hidden" : "block"}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
             <svg
-              className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
+              className={`fill-current h-3 w-3 text-white ${isOpen ? "block" : "hidden"}`}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -48,24 +41,27 @@ export function Nav() {
           </button>
         </div>
         <div
-          className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
+          className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:ml-72 ${isOpen ? "block" : "hidden"}`}
         >
-          <div className="text-sm lg:text-lg lg:mx-36 lg:flex-grow">
-            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+          <div className="text-sm lg:text-lg text-white lg:mx-16 lg:flex-grow ">
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white mr-12">
               Home
             </a>
-            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 mr-12">
               About
             </a>
-            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 mr-12">
               Skills
             </a>
-            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 mr-12">
               Projects
             </a>
-            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 text-white-200 mr-12">
+            <a href="#" className="block font-semibold mt-4 lg:inline-block lg:mt-0 mr-12">
               Contact
             </a>
+
+          <button type="button" class=" text-white bg-transparent border-2 border-greenlight shadow-lg shadow-greendark/50 hover:bg-greendark focus:ring-4 focus:outline-none  font-medium  text-sm px-4 py-2 text-center mr-3 lg:mr-0 md:mr-0">Hire me</button>
+      
           </div>
           <div>
           </div>
