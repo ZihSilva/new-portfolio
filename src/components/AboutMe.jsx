@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../assets/photo3.png";
+import photo from "../assets/fotoPortfolio.png";
 // import Skills from "../Skills/Skills";
 
 export function AboutMe() {

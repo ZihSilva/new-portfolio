@@ -1,5 +1,5 @@
 // import { Sidebar } from "./components/Sidebar";
-import { Nav } from "./components/Nav";
+// import { Nav } from "./components/Nav";
 // import {Navbar} from "./components/Navabar";
 import { HomePage } from "./components/HomePage";
 import { AboutMe } from "./components/AboutMe";
@@ -9,6 +9,7 @@ import { SocialMedia } from "./components/SocialMedia";
 import { SideNavigation } from "./components/SideNavigation";
 import { Contact } from "./components/Contact";
 import "./App.css";
+import { NavB } from "./components/Navb";
 
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
 
   return (
       <div className="Portfolio" >
-        <Nav />
+        {/* <Nav /> */}
         {/* <Sidebar/> */}
         {/* <Navbar/> */}
+        <NavB/>
         <HomePage />
         <SocialMedia />
         <SideNavigation />

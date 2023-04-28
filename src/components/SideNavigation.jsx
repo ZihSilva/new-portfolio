@@ -14,7 +14,7 @@ export function SideNavigation() {
                             <p className="text-base text-white">Home</p>
                         </div>
                         <Link to="home" smooth={true} duration={500}>
-                            <FaHome className="w-7 h-7 text-white shadow-md shadow-greendark" />
+                            <FaHome className="w-7 h-7 text-white shadow-md shadow-greenlight/40" />
                         </Link>
                     </li>
                     <li className="relative text-lg  text-opacity-75  dark:text-white p-3 rounded-full hover:scale-125 duration-300 cursor-pointer group">
@@ -22,7 +22,7 @@ export function SideNavigation() {
                             <p className="text-base text-white">About</p>
                         </div>
                         <Link to="about" smooth={true} duration={500}>
-                            <FaUser className="w-7 h-7 mb-4 text-white shadow-md shadow-greendark" />
+                            <FaUser className="w-7 h-7 mb-4 text-white shadow-md shadow-greenlight/40" />
                         </Link>
                     </li>
                     <li className="relative text-lg  text-white text-opacity-75  dark:text-white p-3  rounded-full hover:scale-125 duration-300 cursor-pointer group">
@@ -30,7 +30,7 @@ export function SideNavigation() {
                             <p className="text-base">Projects</p>
                         </div>
                         <Link to="project" smooth={true} duration={500}>
-                            <FaAtom className="w-7 h-7 text-white shadow-md shadow-greendark" />
+                            <FaAtom className="w-7 h-7 text-white shadow-md shadow-greendark/40" />
                         </Link>
                     </li>
                     <li className="relative text-lg  text-white text-opacity-75  dark:text-white p-3 rounded-full hover:scale-125 duration-300 cursor-pointer group">
@@ -38,7 +38,7 @@ export function SideNavigation() {
                             <p className="text-white">Contact</p>
                         </div>
                         <Link to="contact" smooth={true} duration={500}>
-                            <FaRegEnvelope className="w-7 h-7 text-white shadow-md shadow-greendark" />
+                            <FaRegEnvelope className="w-7 h-7 text-white shadow-md shadow-greenlight/40" />
                         </Link>
                     </li>
                 </ul>

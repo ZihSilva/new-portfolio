@@ -7,6 +7,19 @@ module.exports = {
   
   theme: {
     extend: {
+      keyframes: {
+        flicker: {
+         ' 0%': {
+            'opacity': '0.5',
+            'text-shadow': '2px 2px 10px var(--blue)',
+          },
+          '100%': {
+            'opacity': '1',
+            'text-shadow': '2px 2px 20px var(--blue)',
+          }
+        }
+      },
+      
       screens: {
         "xs":'320',
         ...defaultTheme.screens,
@@ -16,10 +29,7 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
       },
-
-    
-    
-     
+      
       padding: {
         '1/3': '33.33333%',
         '2/3': '60.66667%'

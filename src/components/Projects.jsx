@@ -1,5 +1,4 @@
 import React from "react";
-
 import { IoIosArrowForward } from "react-icons/io";
 
 import data from "../data"

@@ -1,180 +1,154 @@
-//  const [ isOpen, setIsOpen] = useState(false);
-//   const [scrolling, setScrolling] = useState(false);
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
+import { Transition } from "@headlessui/react"
 
-//   const handleResize = () => {
-//     if (window.innerWidth < 768) {
-//     } else {
-//       setIsOpen(false);
-//     }
-//   }
 
-//   useEffect(() => {
-//     if (typeof window !== "undefined") {
-//       window.addEventListener("scroll", () =>
-//         setScrolling(window.pageYOffset > 110)
-//       );
-//     }
-//   }, []);
+export function NavB() {
 
-//   useEffect(() => {
-//     window.addEventListener("resize", handleResize);
-//   });
-
-//   return (
-//     <header className=''fixed w-full max-auto z-50 bg-white>
-//       <div className="flex justify-evenly items-center py-4 md:py-6">
-//         <div className="flex items-center">
-//           <a href="/" className="font-bold text-2xl text-gray-800">
-//             My Portfolio
-//           </a>
-//           {/* <button
-//             onClick={() => setNavbarIsOpen(!navbarIsOpen)}
-//             className="sm:hidden ml-32 focus:outline-none"
-//           >
-//             <svg
-//               className="h-6 w-6 fill-current text-gray-800"
-//               viewBox="0 0 24 24"
-//             >
-//               {navbarIsOpen ? (
-//                 <path
-//                   fillRule="evenodd"
-//                   clipRule="evenodd"
-//                   d="M19 6H5a1 1 0 00-1 1v1a1 1 0 001 1h14a1 1 0 001-1V7a1 1 0 00-1-1zm0 5H5a1 1 0 00-1 1v1a1 1 0 001 1h14a1 1 0 001-1v-1a1 1 0 00-1-1zM4 4a1 1 0 00-1 1v14a1 1 0 001 1h16a1 1 0 001-1V5a1 1 0 00-1-1H4z"
-//                 />
-//               ) : (
-//                 <path
-//                   fillRule="evenodd"
-//                   clipRule="evenodd"
-//                   d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 5H4v2h16v-2z"
-//                 />
-//               )}
-//             </svg>
-//           </button> */}
-//           <button
-//             onClick={() => setIsOpen(!isOpen)}
-//             className="flex sm:hidden items-center px-3 py-2 rounded text-white-500 hover:text-white-400"
-//           >
-//             <svg
-//               className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
-//               viewBox="0 0 20 20"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-//             </svg>
-//             <svg
-//               className={`fill-current h-5 w-5 ${isOpen ? "block" : "hidden"}`}
-//               viewBox="0 0 20 20"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-//             </svg>
-//           </button>
-//         </div>
-//         <nav className={`w-full md:block md:w-auto ${isOpen ? "block" : "hidden"}`}>
-//           <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-//           <li className="z-50 hidden mx-10 list-none lg:inline-block">
-//               <a href="#about" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 About
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#projects" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Projects
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#experience" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Experience
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#contact" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Contact
-//               </a>
-//             </li>
-//             <button className="bg-black hover:bg-transparent text-white font-bold py-2 ml-10 px-4 rounded">
-//                 <li className="z-50 hidden list-none lg:inline-block">
-//                   <a
-//                     href={`mailto:zimarlensilva@gmail.com`}
-//                     className="ml-1 btn-md group"
-//                   >
-//                     Hire me
-//                   </a>
-//                 </li>
-//                 </button>
-//           </ul>
-//           </nav>
-//         </div>
-//     </header>
+    const [isOpen, setIsOpen] = useState(false);
 
 
 
+    return (
+        <div>
+            <nav className="bg-beige">
+                <div className="max-w7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-center justify-between h-16">
+                        <div className="flex items-center">
+                            <div className="flex-shrink-0">
+                                <p className="h-8 w-40 text-white">Zimarlen Silva
+                                </p>
+                            </div>
+                            <div className="hidden md:block">
+                                <div className="ml-96 flex items-end  space-x-4">
+                                    <Link
+                                        to="/"
+                                        className=" text-white hover:bg-greenlight hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                        Home
+                                    </Link>
+                                    <Link
+                                        to="about"
+                                        className=" text-white hover:bg-greenlight hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                        About
+                                    </Link>
+                                    <Link
+                                        to="skills"
+                                        className=" text-white hover:bg-greenlight hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                        Skills
+                                    </Link>
+                                    <Link
+                                        to="projects"
+                                        className=" text-white hover:bg-greenlight hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                        Projects
+                                    </Link>
+                                    <Link
+                                        to="Contact"
+                                        className=" text-white hover:bg-greenlight hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                        Contact
+                                    </Link>
+                                    <button className="text-white bg-transparent border-2 border-greenlight shadow-lg shadow-greendark/50 hover:bg-greendark focus:ring-4 focus:outline-none hover:bg-transparent text-white font-bold py-2 px-4 rounded">
+                                        <li className="z-50 hidden md:hidden list-none lg:inline-block">
+                                            <a
+                                                href={`mailto:zimarlensilva@gmail.com`}
+                                                className="ml-1 btn-md group"
+                                            >
+                                                Hire me
+                                            </a>
+                                        </li>
+                                    </button>
+                                </div>
 
-// export function Nav() {
-//   const [isOpen, setIsOpen] = useState(false);
+                            </div>
+                        </div>
+                        <div className="-mr2 flex md:hidden">
+                            <button
+                                onClick={() => setIsOpen(!isOpen)}
+                                type="button"
+                                className="text-white bg-transparent border-2 border-greenlight shadow-lg shadow-greendark/50 hover:bg-greendark focus:ring-4 focus:outline-none  font-medium  text-sm px-4 mt-6 py-2 text-center bg-white inline-flex items-center justify-center p-2 rounded-md text-white hover:text-greenlight hover:bg-transparent focus:outline-none focus-ring-2 focus:ring-offset-2 focus:ring-offset-gra-800 focus-ring-white "
+                                aria-controls="mobile-menu"
+                                aria-expanded="false"
+                            >
+                                <span className="sr-only">Open main menu</span>
+                                {!isOpen ? (
+                                    <svg
+                                        className="block h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M4 6h16M4 12h16M4 18h16"
+                                        />
+                                    </svg>
+                                ) : (
+                                    <svg
+                                        className="hidden h-6 w-6"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                )}
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-//   return (
-//     <nav className="fixed w-full max-auto z-50 bg-white">
-//       <div className="flex justify-evenly items-center py-4 md:py-6">
-//         <div className="flex items-center">
-//           <a href="/" className="font-bold text-2xl text-gray-800">
-//             My Portfolio
-//           </a>
-//         </div>
-//         <div className="block lg:hidden">
-//           <button
-//             onClick={() => setIsOpen(!isOpen)}
-//             className="flex items-center px-3 py-2 rounded text-white-500 hover:text-white-400"
-//           >
-//             <svg
-//               className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
-//               viewBox="0 0 20 20"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-//             </svg>
-//             <svg
-//               className={`fill-current h-5 w-5 ${isOpen ? "block" : "hidden"}`}
-//               viewBox="0 0 20 20"
-//               xmlns="http://www.w3.org/2000/svg"
-//             >
-//               <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-//             </svg>
-//           </button>
-//         </div>
-//         <div
-//           className={`w-full block flex-grow lg:flex lg:items-center ${isOpen ? "block" : "hidden"}`}
-//         >
-//           <ul className="md:flex items-center ml-20">
-//             <li>
-//               <a href="#about" className="block mt-4 md:inline-block md:mt-0 ml-96">
-//                 About
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#projects" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Projects
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#experience" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Experience
-//               </a>
-//             </li>
-//             <li>
-//               <a href="#contact" className="block mt-4 md:inline-block md:mt-0 ml-10">
-//                 Contact
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-//         <div>
-//           <button className="inline-flex items-center bg-black border-0 py-2 px-4 text-white">
-//             Click Me
-//           </button>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }
-
+                <Transition
+                    show={isOpen}
+                    enter="transition ease-out duration-100 transform"
+                    enterFrom="opacity-0 scale-95"
+                    enterTo="opacity-100 scale-100"
+                    leave="transition ease-in duration-75 transform"
+                    leaveFrom="opacity-100 scale-100"
+                    leaveTo="opacity-0 scale-95"
+                >
+                    {(ref) => (
+                        <div className="md:hidden" id="mobile-menu">
+                            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                                <Link
+                                    to="/"
+                                    className="text-white hover:bg-greenlight hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                                    Home
+                                </Link>
+                                <Link
+                                    to="about"
+                                    className="text-white hover:bg-greenlight hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                                    About
+                                </Link>
+                                <Link
+                                    to="skills"
+                                    className="text-white hover:bg-greenlight hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                                    Skills
+                                </Link>
+                                <Link
+                                    to="projects"
+                                    className="text-white hover:bg-greenlight hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                                    Projects
+                                </Link>
+                                <Link
+                                    to="contact"
+                                    className="text-white hover:bg-greenlight hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                                    Contact
+                                </Link>
+                            </div>
+                        </div>
+                    )}
+                </Transition>
+            </nav>
+        </div>
+    )
+}

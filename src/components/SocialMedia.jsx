@@ -16,7 +16,7 @@ export function SocialMedia() {
                             target={"_blank"}
                             rel="noreferrer"
                         >
-                            <FaLinkedin className="w-7 h-7 mb-8 text-white shadow-md shadow-greendark" />
+                            <FaLinkedin className="w-7 h-7 mb-8 text-white shadow-md shadow-greendark/40" />
                         </a>
                     </div>
                     <div className="relative group text-xl sm:text-2xl md:text-4xl lg:text-4xl text-opacity-75  dark:text-white p-3 rounded-full hover:scale-125 duration-300 cursor-pointer">
@@ -28,7 +28,7 @@ export function SocialMedia() {
                             target={"_blank"}
                             rel="noreferrer"
                         >
-                            <FaGithub className="w-7 h-7 text-white shadow-md shadow-greendark" />
+                            <FaGithub className="w-7 h-7 text-white shadow-md shadow-greenlight/40" />
                         </a>
                     </div>
                     <div className="w-0.5 dark:bg-white bg-dark h-24 opacity-20 mt-2 z-30"></div>
