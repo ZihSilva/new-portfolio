@@ -1,34 +1,21 @@
 import React from "react";
-import Typewritter from "typewriter-effect";
+import ReactTypingEffect from 'react-typing-effect';
 
-const TypewritterEf = ({ text }) => {
+export function Typewritter(){
   return (
     <div>
-      <Typewritter
-        onInit={(typewriter) => {
-          typewriter
-          .typeString('Frontend Developer')
-          .changeDelay(30)
-          .pauseFor(2500)
-          .deleteAll(50)
-          .start()
-          .typeString('Teacher')
-          .pauseFor(2500)
-          .deleteAll()
-          .start()
-          .typeString('Cat Mom')
-          .pauseFor(2500)
-          .deleteAll()
-          .start()
-          .typeString('Nature lover')
-          .pauseFor(2500)
-          .deleteAll()
-          .start()
-          
-        }}
-      />
+      <ReactTypingEffect
+                    typingDelay={200}
+                    speed={30}
+                    eraseSpeed={30}
+                    eraseDelay={1500}
+                    text={[
+                      `Frontend Developer`,
+                      `Teacher`,
+                      `Cat Mom`,
+                      `Foodie Lover`,
+                    ]}
+                  />
     </div>
-  );
-};
-
-export default TypewritterEf;
+  )
+}

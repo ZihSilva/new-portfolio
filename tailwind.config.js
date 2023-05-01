@@ -7,6 +7,7 @@ module.exports = {
   
   theme: {
     extend: {
+  
       keyframes: {
         flicker: {
          ' 0%': {
@@ -25,7 +26,7 @@ module.exports = {
         ...defaultTheme.screens,
         'sm':'640px',
         'md': '768px',
-      'lg': '992px',
+       'lg': '992px',
       'xl': '1280px',
       '2xl': '1536px',
       },
@@ -45,28 +46,6 @@ module.exports = {
       },
 
       colors: {
-        'blue2':'#ABA8A9',
-        'green': '#94AFAA',
-        "lime":"#ebf6d6",
-        'gray': '#a84b62',
-        'green': '#779682',
-        'rose': '#c2828f',
-        'moon': '#ebf6d6',
-        'midnight':"#003442",
-        'beige':"#dedcd7",
-        'dark':"#333333",
-        'ring':"#aba89e",
-        "blue-200":"#52949e"
-      
-      },
-
-      colors: {
-        soft: "#f0f0f0",
-        brand: "#7364d0",
-        brandAlt: "#867dd8",
-        light: "#a2a1a6",
-        mid: "#282833",
-        dark: "#EBEBEB",
         darker: "#02e1cf",
         beige:"#33383e",
         greendark: "#02e1cf",

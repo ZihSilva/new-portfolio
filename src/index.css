@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .shadow-neon {
+      text-shadow:
+        0 0 7px #02e1cf,
+        0 0 10px #02e1cf,
+        0 0 21px #02e1cf;
+    }
+    animation: spin 4000s linear infinite;
+
+    @keyframes spin {
+      from {
+        transform: rotate(360deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+

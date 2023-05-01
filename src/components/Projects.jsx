@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { motion } from "framer-motion"
 import data from "../data"
 
 
@@ -9,14 +9,16 @@ export function Projects() {
     return (
         <section
             name="projects"
-            className="bg-beige dark:bg-slate-900 dark:text-white z-30 mx-auto flex flex-col px-10 w-full md:px-20 lg:px-24 pt-10 section "
+            className="bg-beige dark:bg-slate-900 dark:text-white z-30 mx-auto flex flex-col px-5 sm:px-0 w-full md:px-20 lg:px-24 pt-10 section "
         >
-            <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-32 section">
-
-                <h2 className="text-5xl text-white">My Work</h2>
-                <hr className="bg-greendark rounded-sm  w-48 h-1.5 mt-4 mb-6 border-0"></hr>
-
-                <p className="my-8 mx-2 dark:text-white text-white md:text-xl lg:pr-82">
+           <motion.div
+              transition={{ duration: 0.7 }}
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+            >
+            <div className="container relative flex flex-col items-start justify-center flex-grow mx-auto md:px-20 lg:px-30 section">
+                <h2 className="text-5xl text-white">Projects</h2>
+                <hr className="bg-greendark rounded-sm w-44 lg:w-36 h-1.5 mt-4 mb-6 border-0"></hr>
+                <p className="my-8 mx-2 sm:mr-9 dark:text-white text-white md:text-xl lg:pr-82">
                     Check out some of the personal projects I have been working on
                     lately. For a complete list, visit my
                     <a
@@ -29,12 +31,9 @@ export function Projects() {
                         Github profile.
                     </a>
                 </p>
-
-
-                {/* grid container */}
-                <div className="mt-4 dark:text-white mx-auto no-repeat center object-fit sm:my-4 md:mt-6  grid lg:grid-cols-2 gap-8 lg:gap-10">
-                    {/* card one */}
-
+                {/* grid container */}        
+                 {/* card one */}
+                <div className="mt-4 dark:text-white mx-auto no-repeat center object-fit sm:my-4 md:mt-12 grid lg:grid-cols-2 gap-2 lg:gap-10">
                     {data.map((project) => {
                         return (
                             <div key={project.id} className="m-0">
@@ -43,7 +42,8 @@ export function Projects() {
                                     src={project.img}
                                     alt="/"
                                 />
-                                <h3 className="text-xl font-bold dark:text-white max-auto md:text-2xl lg:text-3xl  tracking-wide font-normal py-2 text-white">
+                               
+                                <h3 className="text-xl font-bold dark:text-white max-auto md:text-2xl lg:text-3xl  tracking-wide font-normal py-1 text-white">
                                     {project.title}
                                     <a
                                         href={project.site}
@@ -64,8 +64,10 @@ export function Projects() {
                                             {tool}
                                         </span>
                                     ))}
+                                     
                                 </div>
-                                <p className="py-2 m-auto lg:pr-0 dark:text-white max-auto md:text-xl text-white">
+                               
+                                <p className="py-2 sm:pr-10 m-auto lg:pr-0 dark:text-white max-auto md:text-xl text-white">
                                     {project.description}
                                 </p>
                                 <div className="flex dark:text-white items-center md:text-xl mb-20">
@@ -83,8 +85,10 @@ export function Projects() {
                             </div>
                         );
                     })}
+                     
                 </div>
             </div>
+            </motion.div>
         </section >
     );
 };
