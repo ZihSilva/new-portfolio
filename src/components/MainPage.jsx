@@ -1,27 +1,26 @@
 // import { Sidebar } from "./components/Sidebar";
-import { Navbar } from "./Navabar";
+// import { Navbar } from "./Navabar";
 import { HomePage } from "./HomePage";
-import { AboutMe } from "./AboutMe";
+import { About } from "./About";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { SocialMedia } from "./SocialMedia";
-import {SideNavigation} from "./SideNavigation";
-
+import { SideNavigation } from "./SideNavigation";
+import { Contact } from "./Contact";
 import "../App.css";
 
-function MainPage() {
+export function MainPage() {
   return (
-    <div className="Portfolio">
-      <Navbar />
+    <>
       {/* <Sidebar/> */}
       <HomePage />
       <SocialMedia />
-      <SideNavigation/>
-      <AboutMe />
+      <SideNavigation />
+      <About />
       <Skills />
       <Projects />
-    </div>
+      <Contact/>
+    </>
   );
 }
 
-export default MainPage;

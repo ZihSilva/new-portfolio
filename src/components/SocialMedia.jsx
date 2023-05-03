@@ -3,12 +3,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export function SocialMedia() {
 
     return (
-
+        
         <div className="fixed bottom-0 z-30 w-full">
             <div className="container relative flex h-full mx-auto">
                 <div className="hidden absolute bottom-0 items-center mt-auto ml-auto group-hover:opacity-100 text-white right-8 md:flex md:flex-col">
-                    <div className="relative group text-xl sm:text-2xl md:text-4xl lg:text-4xl   text-opacity-75   dark:text-white p-3 rounded-full hover:scale-125 duration-300 cursor-pointer">
-                        <div className="hidden lg:block absolute text-white right-0 bottom-20 group-hover:opacity-80  duration-300 opacity-0 py-2 px-0 rounded-full">
+                    <div className="relative group text-xl sm:text-2xl md:text-4xl lg:text-4xl text-opacity-75 dark:text-white p-3 rounded-full hover:scale-125 duration-300 cursor-pointer">
+                        <div className="hidden md:block absolute text-white right-0 bottom-20 group-hover:opacity-80  duration-300 opacity-0 py-2 px-0 rounded-full">
                             <p className="text-base">Linkedin</p>
                         </div>
                         <a

@@ -13,7 +13,7 @@ export function Typewritter(){
                       `Frontend Developer`,
                       `Teacher`,
                       `Cat Mom`,
-                      `Foodie Lover`,
+                      `Sushi Lover`,
                     ]}
                   />
     </div>

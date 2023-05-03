@@ -1,18 +1,6 @@
 import { useState } from "react";
 
 export function Contact() {
-  //   const [name, setName] = useState(" ");
-  //   const [email, setEmail] = useState(" ");
-  //   const [message, setMessage] = useState(" ");
-
-  //   const handleSubmit = (event) => {
-  //     console.log("handleSubmit ran");
-  //     event.preventDefault();
-
-  //     setName(" ");
-  //     setEmail(" ");
-  //     setMessage(" ");
-  //   };
 
   const [name, setName] = useState(" ");
   const [email, setEmail] = useState(" ");
@@ -30,15 +18,15 @@ export function Contact() {
   return (
     <div
       name="contact"
-      className="bg-beige dark:bg-slate-900 pb-4 px-10 py-10 dark:text-white w-full h-auto flex-col flex items-center font-myfont  justify-center"
+      className="bg-beige pb-4 px-5 pt-10 w-full h-auto flex-col flex items-center font-myfont  justify-center"
     >
       <div className="w-80% lg:w-9/12 h-full flex flex-col justify-center">
-      <div className="flex flex-col items-center">
-  <h1 className="text-white dark:text-white flex flex-col justify-center text-4xl">
-    Contact Me
-  </h1>
-  <hr className="bg-greendark w-9/12 h-1.5 mt-2 mb-6 border-0"/>
-</div>
+        <div className="flex flex-col items-center">
+          <h1 className="text-white dark:text-white flex flex-col justify-center text-5xl">
+            Contact Me
+          </h1>
+          <hr className="bg-greendark w-9/12 md:w-4/12 lg:w-3/12 h-1.5 mt-2 mb-6 border-0" />
+        </div>
         <div className="mt-6 w-full sm:mx-auto md:text-lg md:w-[35rem] mx-auto lg:max-w-xl ">
           <form
             className=""
